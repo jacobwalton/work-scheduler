@@ -23,6 +23,10 @@ body {
   
   .description{
     white-space: pre-wrap;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 36px;
+
   }
   
   .time-block{
@@ -76,15 +80,21 @@ body {
     float: right;
     height: 80px;
     width: 10%;
+    display: flex;
+    justify-content: center;
   }
   
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
-  
+
+  img:hover {
+    width: 47px;
+    height: 47px;
+}
   img:active {
-      width: 47px;
-      height: 47px;
+      width: 45px;
+      height: 45px;
   }
   
