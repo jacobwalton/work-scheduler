@@ -25,7 +25,7 @@ body {
     white-space: pre-wrap;
     font-style: italic;
     text-decoration: underline;
-    background-color: lightgray;
+    background-color: lightskyblue;
     height: 60px;
     font-size: 28px;
     display: flex;
@@ -79,7 +79,7 @@ body {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06AED5;
+    background-color: lightskyblue;
     color: white;
     float: right;
     height: 80px;
@@ -88,9 +88,10 @@ body {
     justify-content: center;
   }
 
-  #hour{
-      font-size: 25px;
+  input{
+    display: inline-block;
   }
+
   
   .saveBtn i:hover {
     font-size: 20px;
@@ -105,4 +106,3 @@ body {
       width: 45px;
       height: 45px;
   }
-  
