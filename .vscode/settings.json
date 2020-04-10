@@ -6,5 +6,6 @@
         "Timeblocks",
         "amrow",
         "pmrow"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

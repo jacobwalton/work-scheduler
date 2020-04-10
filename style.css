@@ -1,108 +1,119 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-  }
-  
-  textarea{
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  
-  .jumbotron {
-    text-align: center;
-    background-color: transparent;
-    color: black;
-    border-radius: 0;
-    border-bottom: 10px solid black;
-  }
-  
-  .description{
-    white-space: pre-wrap;
-    font-style: italic;
-    text-decoration: underline;
-    background-color: lightskyblue;
-    height: 60px;
-    font-size: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .time-block{
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  .row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;;
-    width: 80%;
-    color: #000000;
-  }
-
-  
-  .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-    width: 10%;
-    float: left;
-    text-align: center;
-    padding-top: 3%;
-    padding-left: 5%;
-    position: relative;
-    right: 6%;
-  }
-  
-  .past {
-    background-color: #d3d3d3;
-    color: white;
-  }
-  
-  .present {
-    background-color: #ff6961;
-    color: white;
-  }
-  
-  .future {
-    background-color: #77dd77;
-    color: white;
-  }
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: lightskyblue;
-    color: white;
-    float: right;
-    height: 80px;
-    width: 10%;
-    display: flex;
-    justify-content: center;
-  }
-
-  input{
-    display: inline-block;
-  }
-
-  
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-  }
-
-  img:hover {
-    width: 47px;
-    height: 47px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
 }
-  img:active {
-      width: 45px;
-      height: 45px;
-  }
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 2px solid black;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.description {
+  white-space: pre-wrap;
+  font-style: italic;
+  text-decoration: underline;
+  height: 60px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-block {
+  text-align: center;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  width: 80%;
+  color: black;
+  font-size: 28px;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  width: 10%;
+  float: left;
+  text-align: center;
+  padding-top: 3%;
+  position: relative;
+  right: 1%;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightskyblue;
+  color: white;
+  float: right;
+  height: 80px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+  width: 47px;
+  height: 47px;
+}
+img:active {
+  width: 45px;
+  height: 45px;
+}
+
+.clear-button {
+  width: 90%;
+  float: right;
+  height: 40px;
+  background-color: darkgrey;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: red;
+  font-size: 25px;
+  border-top: none;
+}
+.clear-button:active {
+  background-color: grey;
+}
