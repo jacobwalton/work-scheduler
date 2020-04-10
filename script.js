@@ -107,32 +107,3 @@ function getEvent() {
 }
 init();
 getEvent();
-
-
-
-
-
-
-
-
-
-
-
-
-// $('textarea').text(getEvent)
-// renderEvent();
-
-// var getItem =localStorage.getItem('event',eventInput)
-
-// saveBtn.click(function () {
-// // var eventInput = $("textarea").val().trim();
-// storeEvent();
-// $("textarea").append(eventInput).val()
-
-//   console.log(localStorage)
-
-// });
-
-// function storeEvent(){
-//   localStorage.setItem("event", (JSON.stringify(eventInput)))
-// };
