@@ -2,27 +2,17 @@
 function init() {
   var getEvent = localStorage.getItem("event");
   $("textarea").append(getEvent).text();
-  console.log(getEvent)
 }
 
-
-
-
-
-
-
-//created clear button
+//clear button
 var clearBtn = $("<button>");
 $(".container").append(clearBtn);
 clearBtn.addClass("clear-button").text("CLEAR ALL");
-//added event to clear the text areas on click
+//event to clear the text areas and on click
 clearBtn.on("click", function () {
-  $("textarea").val("");
+  localStorage.setItem("event", "");
+  $(".row").val("");
 });
-
-// function getEvent() {
-//   $("textarea").text(localStorage.getItem("event"));
-// }
 
 var today = moment();
 var getDate = $("#currentDay");
@@ -30,8 +20,8 @@ getDate.addClass("description");
 $(".description").text(today.format("MM-DD-YYYY"));
 $("#currentDay").append(getDate);
 
-var timeBlock = moment();
 
+var timeBlock = moment();
 var now = moment(timeBlock.format("HH"));
 // if statements to determine if row is past, present, or future
 if ($("#9am").attr("value") > now._i) {
@@ -97,13 +87,24 @@ if ($("#5pm").attr("value") > now._i) {
 } else {
   $("#5pmrow").addClass("present");
 }
+
+//click event stores input
 var saveBtn = $("button");
 function getEvent() {
   saveBtn.click(function () {
     var eventInput = $("textarea").val();
     localStorage.setItem("event", eventInput);
- 
   });
 }
+
+//click event stores input
+var saveBtn = $(".saveBtn");
+function getEvent() {
+  saveBtn.click(function () {
+    var eventInput = $("textarea").val();
+    localStorage.setItem("event", eventInput);
+  });
+}
+
 init();
 getEvent();
